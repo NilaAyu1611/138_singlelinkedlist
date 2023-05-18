@@ -71,7 +71,7 @@ bool searchNode(int nim, Node* current, Node* previous) {
 	{
 		return false;
 	}
-} 
+}
 bool deleteNode(int nim) {
 	Node* current = START;
 	Node* previous = START;
@@ -104,4 +104,14 @@ void traverse() {
 			currentNode = currentNode->next;
 		}
 	}
+}
+
+void searcheData() {
+	if (listEmpty()) {
+		cout << "List Kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	
 }
